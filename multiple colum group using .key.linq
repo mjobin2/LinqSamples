@@ -22,7 +22,7 @@ from food in Items
 				FoodItems = from x in tempdataset
 									select new {
 												ItemID = x.ItemID,
-												FoodDescription = x.Description
+												FoodDescription = x.Description,
 												TimesServed = x.BillItems.count()
 									}
 				}
