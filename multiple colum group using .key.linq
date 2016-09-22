@@ -23,6 +23,6 @@ from food in Items
 									select new {
 												ItemID = x.ItemID,
 												FoodDescription = x.Description,
-												TimesServed = x.BillItems.count()
+												TimesServed = x.BillItems.Count()
 									}
 				}
